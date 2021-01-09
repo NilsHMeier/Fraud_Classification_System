@@ -2,7 +2,7 @@
 library(caret)
 library(RANN)
 
-prepare_preprocessing <- function(data, methods = c("knnImpute", "center", "scale"), bounds = c(0,1), k = 15) {
+prepare_preprocessing <- function(data, methods = c("knnImpute", "center", "scale"), bounds = c(0,1), k = 5) {
   preProcessor = preProcess(data, method=methods, rangeBounds=bounds, k=k)
   preProcessor
 }
