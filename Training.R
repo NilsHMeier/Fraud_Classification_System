@@ -95,5 +95,5 @@ neural_net_cv$bestTune
 plot_NeuralNet(neural_net_cv)
 
 # Save model and preprocessor to use them in Predict.R
-saveRDS(neural_net, "./Models/Sampled_NN_2.rds")
-saveRDS(preProcessor, "./Models/Sampled_Pre_BAG_2.rds")
+saveRDS(neural_net, "./Models/Model.rds")
+saveRDS(preProcessor, "./Models/Preprocessor.rds")
